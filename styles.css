@@ -1,4 +1,9 @@
 :root {
+  --primary-color: #0066ff;
+  --secondary-color: #ff7f50;
+  --highlight-color: #ebf3ff;
+  --background-color: #fcfcfc;
+  --fade-duration: 2s;
   font-family: 'Inter', sans-serif;
 }
 
@@ -123,13 +128,12 @@ body {
   }
 }
 
-
 .diagonal-line-1 {
   position: absolute;
   top: 20%;
   width: 100%;
   height: 100px;
-  background-color: #fcfcfc;
+  background-color: var(--background-color);
   transform: skewY(5deg);
   z-index: -400;
 }
@@ -139,7 +143,7 @@ body {
   top: 70%;
   width: 100%;
   height: 100px;
-  background-color: #fcfcfc;
+  background-color: var(--background-color);
   transform: skewY(-5deg);
   z-index: -400;
 }
@@ -147,7 +151,6 @@ body {
 .big-text {
   position: absolute;
   width: 100%;
-  font-family: 'Inter', sans-serif;
   font-weight: 900;
   z-index: -200;
   top: 50%;
@@ -157,12 +160,12 @@ body {
   animation-name: fadeInLeft;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  animation-duration: 2s;
+  animation-duration: var(--fade-duration);
   opacity: 1;
 }
 
 .big-text-highlight {
-  color: #edf4ff;
+  color: var(--highlight-color);
 }
 
 @keyframes fadeInLeft {
@@ -178,22 +181,21 @@ body {
 
 .it {
   font-weight: 600;
-  color: coral;
+  color: var(--secondary-color);
 }
 
 .brackets {
   position: absolute;
   top: 22%;
   left: 24%;
-  color: #0066ff;
-  font-family: 'Inter', sans-serif;
+  color: var(--primary-color);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 44px;
   z-index: 4000;
   animation-name: fadeInRightBracket;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  animation-duration: 2s;
+  animation-duration: var(--fade-duration);
   opacity: 1;
 }
 
@@ -201,15 +203,14 @@ body {
   position: absolute;
   top: 22%;
   left: 76%;
-  color: #0066ff;
-  font-family: 'Inter', sans-serif;
+  color: var(--primary-color);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 44px;
   z-index: 4000;
   animation-name: fadeInTop;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  animation-duration: 2s;
+  animation-duration: var(--fade-duration);
   opacity: 1;
 }
 
@@ -238,6 +239,11 @@ body {
 @media only screen and (max-width: 768px) {
   .center-description {
       max-width: 280px;
+      font-size: 16px;
+  }
+
+  .center-text {
+    font-size: 24px;
   }
 
   .left {
