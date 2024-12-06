@@ -196,6 +196,7 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: var(--fade-duration);
+  animation-fill-mode: forwards;
   opacity: 1;
 }
 
@@ -211,6 +212,7 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: var(--fade-duration);
+  animation-fill-mode: forwards;
   opacity: 1;
 }
 
@@ -261,22 +263,50 @@ body {
   }
 
   .top {
-      margin-top: 10px;
+      margin-top: 20px;
       letter-spacing: 1px;
   }
 
   .bottom {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       letter-spacing: 1px;
   }
 
   .brackets {
-      left: 20%;
-      font-size: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+
+  @keyframes fadeInRightBracket {
+    0% {
+      opacity: 0;
+      transform: translate(200%, -50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .brackets-2 {
-      left: 68%;
-      font-size: 30px;
+    top: unset;
+    bottom: 22%;
+    left: 50%;
+    font-size: 30px;
+    animation-name: fadeInBottom;
+    opacity: 1;
+  }
+
+  @keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
   }
 }
