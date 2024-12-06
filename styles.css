@@ -36,12 +36,12 @@ body {
 
 @keyframes fadeInRight {
   0% {
-      opacity: 0;
-      transform: translateX(-50%);
+    opacity: 0;
+    transform: translateX(-50%);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -121,10 +121,10 @@ body {
 
 @keyframes fadeInOpacity {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -170,12 +170,12 @@ body {
 
 @keyframes fadeInLeft {
   0% {
-      opacity: 0;
-      transform: translateX(50%) translateY(-50%);
+    opacity: 0;
+    transform: translateX(50%) translateY(-50%);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0) translateY(-50%);
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
   }
 }
 
@@ -218,23 +218,23 @@ body {
 
 @keyframes fadeInTop {
   0% {
-      opacity: 0;
-      transform: translateY(-200%);
+    opacity: 0;
+    transform: translateY(-200%);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeInRightBracket {
   0% {
-      opacity: 0;
-      transform: translateX(200%);
+    opacity: 0;
+    transform: translateX(200%);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -244,8 +244,8 @@ body {
   }
 
   .center-description {
-      max-width: 280px;
-      font-size: 16px;
+    max-width: 280px;
+    font-size: 16px;
   }
 
   .center-text {
@@ -253,8 +253,8 @@ body {
   }
 
   .left {
-      margin-left: -20px;
-      letter-spacing: 1px;
+    margin-left: -20px;
+    letter-spacing: 1px;
   }
 
   .right {
@@ -263,13 +263,13 @@ body {
   }
 
   .top {
-      margin-top: 20px;
-      letter-spacing: 1px;
+    margin-top: 20px;
+    letter-spacing: 1px;
   }
 
   .bottom {
-      margin-bottom: 20px;
-      letter-spacing: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
   .brackets {
@@ -301,12 +301,12 @@ body {
 
   @keyframes fadeInBottom {
     0% {
-        opacity: 0;
-        transform: translate(-50%, 200%);
+      opacity: 0;
+      transform: translate(-50%, 200%);
     }
     100% {
-        opacity: 1;
-        transform: translate(-50%, -50%);
+      opacity: 1;
+      transform: translate(-50%, -50%);
     }
   }
 }
